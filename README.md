@@ -29,6 +29,11 @@ yarn test:e2e
 ```
 yarn lint
 ```
+### Lints and fixes files
+```
+admin url - /admin/car or admin/bike
+
+```
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
