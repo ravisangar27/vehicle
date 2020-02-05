@@ -1,7 +1,5 @@
 <template>
- 
     <div class="card">
-
         <div class="card-header">
             <div class="float-left">
                 <nav aria-label="breadcrumb">
