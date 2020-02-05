@@ -340,25 +340,21 @@ export default {
 
     VehicleFilter() { 
 
-      const setVehicleCore = this.setVehicleCore;
+      let setVehicleCore = this.setVehicleCore;
 
-      if(setVehicleCore.length > 0){
-        this.setVehicles = setVehicleCore.filter(vehicle => {
-          return this.statusFilterValue.includes(vehicle.status);
-        }); 
-      }
-
-      if(setVehicleCore.length > 0){
-        this.setVehicles = setVehicleCore.filter(vehicle => {
-          return this.vehicleTypeFilterValue.includes(vehicle.vehicleType);
-        }); 
-      }
-
-      if(setVehicleCore.length > 0){
-        this.setVehicles = setVehicleCore.filter(vehicle => {
-          return this.modelFilterValue.includes(vehicle.model);
-        }); 
-      }             
+    
+      setVehicleCore = setVehicleCore.filter(vehicle => {
+        return this.statusFilterValue.includes(vehicle.status);
+      }); 
+     
+      setVehicleCore = setVehicleCore.filter(vehicle => {
+        return this.vehicleTypeFilterValue.includes(vehicle.vehicleType);
+      }); 
+    
+      this.setVehicles = setVehicleCore.filter(vehicle => {
+        return this.modelFilterValue.includes(vehicle.model);
+      }); 
+                  
     },
   }
 }
