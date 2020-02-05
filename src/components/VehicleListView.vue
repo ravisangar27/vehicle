@@ -125,7 +125,7 @@ export default {
         },
 
         showVehicleModal(vehicle){
-            console.log(this.vehicle);
+
             this.$emit("showVehicleModal", vehicle);
         },
 
@@ -158,7 +158,7 @@ export default {
                 this.errors.push('Email is required.');
                 isError = true;
             }
-            console.log(this.errors);
+           
             if(isError){
                 return 0;
             } else 
@@ -194,9 +194,9 @@ export default {
                 city: this.city,
                 zip_code:this.zipCode,
                 country: this.country,
-            }).then(({ data }) => {
+            }).then(() => {
                 
-                console.log(data);
+              
                 this.isLoading = false;
                 this.success = "You have successfully reserved";
                 this.$emit("reserveUpdate", this.index);

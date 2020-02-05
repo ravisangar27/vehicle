@@ -138,8 +138,8 @@ export default {
             last_tuv: this.lastTuv,
             latitude: this.latitude,
             longitude: this.longitude,
-        }).then(({ data }) => {
-            console.log(data);
+        }).then(() => {
+           
             loader.hide();
             this.success = "You have successfully created";
         }).catch(error  => {

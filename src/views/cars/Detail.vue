@@ -89,14 +89,6 @@ export default {
 		deleteCarAction(){
 			 window.axios.delete(`https://my-json-server.typicode.com/WAMaurice/rest-db-for-frontend/cars/${this.deleteCar.id}`, {
 				
-			}).then(({ data }) => {
-				console.log(data);
-				
-			}).catch(error  => {
-				
-				if(error.response){
-					console.log(error.response);
-				}
 			});
 		}
 

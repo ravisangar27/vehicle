@@ -58,14 +58,6 @@ export default {
     },
   },
 
-  watch : {
-    cars(){
-      console.log(this.cars);
-      
-      //this.mergeVehicle();
-    },
-  },
-
   mounted() {    
     this.fetch();
   

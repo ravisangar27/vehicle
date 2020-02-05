@@ -174,8 +174,8 @@ export default {
                 serial_no: this.serialNo,
                 latitude: this.latitude,
                 longitude: this.longitude,
-            }).then(({ data }) => {
-                console.log(data);
+            }).then(() => {
+                
                 this.success = "You have successfully updated";
                 loader.hide();
                 

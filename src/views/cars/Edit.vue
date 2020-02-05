@@ -103,14 +103,14 @@ export default {
 
 	watch : {
         car(){
-            console.log(this.car);
+           
             this.brand = this.car.brand;
             this.model = this.car.model;
             this.status = this.car.status; 
             this.lastTuv = this.car.last_tuv;
             this.latitude = this.car.location.latitude;
             this.longitude = this.car.location.longitude;
-            console.log(window.moment(this.car.last_tuv).format('DD/MM/YYYY'));
+            
         }
             
 	},
@@ -190,9 +190,9 @@ export default {
             last_tuv: this.lastTuv,
             latitude: this.latitude,
             longitude: this.longitude,
-        }).then(({ data }) => {
-            console.log(data);
-             this.success = "You have successfully updated";
+        }).then(() => {
+            
+            this.success = "You have successfully updated";
             loader.hide();
             
         }).catch(error  => {

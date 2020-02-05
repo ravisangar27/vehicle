@@ -57,14 +57,6 @@ export default {
     },
   },
 
-  watch : {
-    bikes(){
-      console.log(this.bikes);
-      
-      //this.mergeVehicle();
-    },
-  },
-
   mounted() {    
     this.fetch();
   

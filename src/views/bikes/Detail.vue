@@ -93,14 +93,6 @@ export default {
 		deleteBikeAction(){
 			 window.axios.delete(`https://my-json-server.typicode.com/WAMaurice/rest-db-for-frontend/bikes/${this.deleteBike.id}`, {
 				
-			}).then(({ data }) => {
-				console.log(data);
-				
-			}).catch(error  => {
-				
-				if(error.response){
-					console.log(error.response);
-				}
 			});
 		}
 
